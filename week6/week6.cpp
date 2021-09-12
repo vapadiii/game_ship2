@@ -75,35 +75,35 @@ int main() {
 			draw_ship(x, y);
 		}
 		if (cannonballst1 == 1) {
-			erase_bullet(cbx1, cby1);
+			erase_cannonball(cbx1, cby1);
 			if (cby1 == 0) cannonballst1 = 0;
 			if (cby1 >= 1) {
 				cannonball(cbx1, --cby1);
 			}
 		}
 		if (cannonballst2 == 1) {
-			erase_bullet(cbx2, cby2);
+			erase_cannonball(cbx2, cby2);
 			if (cby2 == 0) cannonballst2 = 0;
 			if (cby2 >= 1) {
 				cannonball(cbx2, --cby2);
 			}
 		}
 		if (cannonballst3 == 1) {
-			erase_bullet(cbx3, cby3);
+			erase_cannonball(cbx3, cby3);
 			if (cby3 == 0) cannonballst3 = 0;
 			if (cby3 >= 1) {
 				cannonball(cbx3, --cby3);
 			}
 		}
 		if (cannonballst4 == 1) {
-			erase_bullet(cbx4, cby4);
+			erase_cannonball(cbx4, cby4);
 			if (cby4 == 0) cannonballst4 = 0;
 			if (cby4 >= 1) {
 				cannonball(cbx4, --cby4);
 			}
 		}
 		if (cannonballst5 == 1) {
-			erase_bullet(cbx5, cby5);
+			erase_cannonball(cbx5, cby5);
 			if (cby5 == 0) cannonballst5 = 0;
 			if (cby5 >= 1) {
 				cannonball(cbx5, --cby5);
@@ -149,7 +149,7 @@ void cannonball(int x, int y) {
 	setcolor(7, 0);
 	printf("|");
 }
-void erase_bullet(int x, int y) {
+void erase_cannonball(int x, int y) {
 	gotoxy(x, y);
 	setcolor(7, 0);
 	printf(" ");
