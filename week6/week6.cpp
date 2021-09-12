@@ -2,13 +2,7 @@
 #include<stdio.h>
 #include<Windows.h>
 #include<conio.h>
-/*void gotoxy(int, int);
-void draw_ship(int, int);
-void erase_ship(int, int);
-void setcursor(bool);
-void setcolor(int, int);
-void bullet(int x, int y);
-void erase_bullet(int x, int y);*/
+
 int main() {
 	setcursor(0);
 	char ch = ' ';
